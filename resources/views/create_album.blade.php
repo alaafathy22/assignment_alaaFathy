@@ -2,7 +2,7 @@
  <form action="{{ route('create_Album') }}" method="POST">
     @csrf
     <h1>create Album</h1>
-    <input placeholder="Name Album" type="text" name="name_album">
+    <input required placeholder="Name Album" type="text" name="name_album">
     <button>Save</button>
 </form>
 @if (Session::has('success_create_album'))
